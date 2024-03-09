@@ -20,10 +20,11 @@ body {
     object-fit: cover;
     width: 100%;
 }
+
 .container main {
     position: relative;
     z-index: 1;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
-  }
+}
