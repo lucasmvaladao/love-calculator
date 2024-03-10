@@ -1,30 +1,134 @@
+/*Fonte importada do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+/*Define estilos padrão para todos os elementos*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-style: italic;
+  font-size: 20px;
+}
+ 
+/* Estilos para rótulos (labels) */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 20px;
+  line-height: normal;
+}
+ 
+/* Estilos dos inputs */
+input {
+  color: #000;
+  font-size: 15px;
+  margin: 5px 10px;
+  padding: 10px;
+  border-radius: 2px;
+  border: 2px solid transparent;
+  text-align: center;
+}
+ 
+/* Estilos para o resultado dentro do container */
+* #resultado {
+  top: 50%;
+  left: 50%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  max-width: calc(100% - 40px);
+  }
+ 
+/* Estilos para o corpo do documento */
 body {
-    margin: 0;
-    padding: 0;
-    height: 100px;
+  margin: 0;
+  padding: 0;
+  height: 100px;
 }
-
+ 
+/* Estilos para o container principal */
 .container {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+ 
+/* Estilos para o vídeo de fundo dentro do container */
 .container video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+}
+ 
+/* Estilos para o conteúdo principal dentro do container */
+.container main {
+  width: 400px;
+  padding: 50px;
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
 }
 
-.container main {
-    position: relative;
-    z-index: 1;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
+
+/* Estilos para o botão */ 
+button {
+  background: #fff;
+  color: #000;
+  border: 1px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+ 
+button:hover {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+ 
+/* Estilo do título principal do container */ 
+h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-style: italic;
+  padding-bottom: 40px;
+}
+
+/* Responsividade da página */ 
+@media screen and (max-width: 1200px) {
+  :root {
+    --snc-text-base: 15px;
+    --snc-2: max(20px, min(1.5vw,28px));
+  }
+}
+ 
+@media screen and (max-width: 1500px) {
+  :root {
+    --snc-link-max-w: 380px;
+    --snc-2: max(24px, min(1.5vw, 30px));
+  }
+}
+ 
+@media screen and (max-width: 2500px) {
+  :root {
+    --snc-text-base: 16px;
+    --snc-link-max-w: 450px;
+  }
 }
